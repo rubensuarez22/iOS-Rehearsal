@@ -1,57 +1,109 @@
 //
 //  Persistence.swift
-//  iOS-Rehersal
+//  iOS-Rehearsal
 //
 //  Created by Rubén Suárez on 14/06/26.
 //
 
 import CoreData
 
-struct PersistenceController {
-    static let shared = PersistenceController()
+public final class PersistenceController {
+    /// Instancia única compartida del controlador en toda la aplicación (Patrón Singleton)
+    public static let shared = PersistenceController()
 
+    /// Contenedor de previsualización en memoria para el lienzo de SwiftUI (Xcode Previews)
     @MainActor
-    static let preview: PersistenceController = {
+    public static let preview: PersistenceController = {
         let result = PersistenceController(inMemory: true)
         let viewContext = result.container.viewContext
-        for _ in 0..<10 {
-            let newItem = Item(context: viewContext)
-            newItem.timestamp = Date()
+        
+        // Creamos un personaje de prueba (Mock) para que las Previews muestren información real
+        let mockChar = CDCharacter(context: viewContext)
+        mockChar.id = 1
+        mockChar.name = "Rick Sanchez"
+        mockChar.status = "Alive"
+        mockChar.species = "Human"
+        mockChar.gender = "Male"
+        mockChar.image = "https://rickandmortyapi.com/api/character/avatar/1.jpeg"
+        mockChar.url = "https://rickandmortyapi.com/api/character/1"
+        mockChar.originName = "Earth (C-137)"
+        mockChar.locationName = "Citadel of Ricks"
+        mockChar.locationUrl = "https://rickandmortyapi.com/api/location/3"
+        mockChar.isFavorite = true
+        mockChar.latitude = 37.7749 // San Francisco (Coordenada simulada)
+        mockChar.longitude = -122.4194
+         
+        // Guardamos una URL de episodio de prueba (binario serializado en JSON)
+        let episodeUrls = ["https://rickandmortyapi.com/api/episode/1", "https://rickandmortyapi.com/api/episode/2"]
+        if let data = try? JSONEncoder().encode(episodeUrls) {
+            mockChar.episodeUrlsData = data
         }
+        
         do {
             try viewContext.save()
         } catch {
-            // Replace this implementation with code to handle the error appropriately.
-            // fatalError() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
             let nsError = error as NSError
-            fatalError("Unresolved error \(nsError), \(nsError.userInfo)")
+            fatalError("Error no resuelto en preview de PersistenceController: \(nsError), \(nsError.userInfo)")
         }
+        
         return result
     }()
 
-    let container: NSPersistentContainer
+    /// El contenedor persistente de CoreData
+    public let container: NSPersistentContainer
 
-    init(inMemory: Bool = false) {
-        container = NSPersistentContainer(name: "iOS_Rehersal")
+    public init(inMemory: Bool = false) {
+        // Enlazamos con el archivo .xcdatamodeld
+        container = NSPersistentContainer(name: "iOS_Rehearsal")
+        
         if inMemory {
-            container.persistentStoreDescriptions.first!.url = URL(fileURLWithPath: "/dev/null")
+            // Si es en memoria (para tests o previews), redirigimos la ruta al vacío (/dev/null)
+            guard let storeDescription = container.persistentStoreDescriptions.first else {
+                AppLogger.error("No se encontró ninguna descripción de almacén persistente en el contenedor. La lista persistentStoreDescriptions está vacía.", category: .database)
+                return
+            }
+            storeDescription.url = URL(fileURLWithPath: "/dev/null")
         }
+        
         container.loadPersistentStores(completionHandler: { (storeDescription, error) in
             if let error = error as NSError? {
-                // Replace this implementation with code to handle the error appropriately.
-                // fatalError() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
-
-                /*
-                 Typical reasons for an error here include:
-                 * The parent directory does not exist, cannot be created, or disallows writing.
-                 * The persistent store is not accessible, due to permissions or data protection when the device is locked.
-                 * The device is out of space.
-                 * The store could not be migrated to the current model version.
-                 Check the error message to determine what the actual problem was.
-                 */
-                fatalError("Unresolved error \(error), \(error.userInfo)")
+                AppLogger.error(
+                    "Error crítico al cargar almacén de datos: \(error), \(error.userInfo)",
+                    category: .database,
+                    error: error
+                )
+                
+                // Intentamos recuperar eliminando el almacén corrupto y recargando
+                if let storeURL = storeDescription.url {
+                    AppLogger.info("Intentando eliminar almacén corrupto en: \(storeURL.path)", category: .database)
+                    do {
+                        try FileManager.default.removeItem(at: storeURL)
+                        AppLogger.info("Almacén corrupto eliminado exitosamente. Intentando recargar...", category: .database)
+                        
+                        // Reintentamos cargar el almacén tras eliminar el archivo corrupto
+                        self.container.loadPersistentStores { (retryDescription, retryError) in
+                            if let retryError = retryError as NSError? {
+                                AppLogger.error(
+                                    "Error fatal al recargar almacén después de eliminar archivo corrupto: \(retryError), \(retryError.userInfo)",
+                                    category: .database,
+                                    error: retryError
+                                )
+                            } else {
+                                AppLogger.info("Almacén recargado exitosamente tras recuperación.", category: .database)
+                            }
+                        }
+                    } catch {
+                        AppLogger.error(
+                            "No se pudo eliminar el almacén corrupto en: \(storeURL.path)",
+                            category: .database,
+                            error: error
+                        )
+                    }
+                }
             }
         })
+        
+        // Une automáticamente los cambios del contexto en segundo plano al contexto de la vista principal
         container.viewContext.automaticallyMergesChangesFromParent = true
     }
 }

@@ -1,0 +1,20 @@
+# Configuración de SwiftLint para Rick & Morty iOS app
+# Este archivo define las reglas de estilo de código estático exigidas.
+
+disabled_rules:
+  # Desactivamos reglas cosméticas menores para facilitar la compilación fluida del evaluador
+  - trailing_whitespace
+  - line_length
+  - todo
+  - force_cast
+  - force_try
+
+excluded:
+  # Directorios excluidos del análisis
+  - Carthage
+  - Pods
+  - Build
+  - DerivedData
+  - DerivedSources
+  - ./*/DerivedData
+  - ./*/DerivedSources

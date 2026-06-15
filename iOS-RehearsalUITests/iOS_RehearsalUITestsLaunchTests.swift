@@ -1,13 +1,13 @@
 //
-//  iOS_RehersalUITestsLaunchTests.swift
-//  iOS-RehersalUITests
+//  iOS_RehearsalUITestsLaunchTests.swift
+//  iOS-RehearsalUITests
 //
 //  Created by Rubén Suárez on 14/06/26.
 //
 
 import XCTest
 
-final class iOS_RehersalUITestsLaunchTests: XCTestCase {
+final class iOS_RehearsalUITestsLaunchTests: XCTestCase {
 
     override class var runsForEachTargetApplicationUIConfiguration: Bool {
         true

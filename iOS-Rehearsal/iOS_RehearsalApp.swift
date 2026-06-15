@@ -1,21 +1,21 @@
 //
-//  iOS_RehersalApp.swift
-//  iOS-Rehersal
+//  iOS_RehearsalApp.swift
+//  iOS-Rehearsal
 //
 //  Created by Rubén Suárez on 14/06/26.
 //
 
 import SwiftUI
-import CoreData
 
 @main
-struct iOS_RehersalApp: App {
-    let persistenceController = PersistenceController.shared
+struct iOS_RehearsalApp: App {
+    public init() {
+        // Inicialización de la aplicación
+    }
 
     var body: some Scene {
         WindowGroup {
             ContentView()
-                .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }
 }

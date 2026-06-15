@@ -16,50 +16,37 @@
 			containerPortal = 911A34F42FDF27AF00468A7E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 911A34FB2FDF27AF00468A7E;
-			remoteInfo = "iOS-Rehearsal";
+			remoteInfo = "iOS-Rehersal";
 		};
 		911A35192FDF27B000468A7E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 911A34F42FDF27AF00468A7E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 911A34FB2FDF27AF00468A7E;
-			remoteInfo = "iOS-Rehearsal";
+			remoteInfo = "iOS-Rehersal";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		911A34FC2FDF27AF00468A7E /* iOS-Rehearsal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-Rehearsal.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		911A350E2FDF27B000468A7E /* iOS-RehearsalTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iOS-RehearsalTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		911A35182FDF27B000468A7E /* iOS-RehearsalUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iOS-RehearsalUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		911A34FC2FDF27AF00468A7E /* iOS-Rehersal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-Rehersal.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		911A350E2FDF27B000468A7E /* iOS-RehersalTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iOS-RehersalTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		911A35182FDF27B000468A7E /* iOS-RehersalUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iOS-RehersalUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
-/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		91246F3C2FDFA2C700615779 /* Exceptions for "iOS-Rehearsal" folder in "iOS-Rehearsal" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				Info.plist,
-			);
-			target = 911A34FB2FDF27AF00468A7E /* iOS-Rehearsal */;
-		};
-/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
-
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		911A34FE2FDF27AF00468A7E /* iOS-Rehearsal */ = {
+		911A34FE2FDF27AF00468A7E /* iOS-Rehersal */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				91246F3C2FDFA2C700615779 /* Exceptions for "iOS-Rehearsal" folder in "iOS-Rehearsal" target */,
-			);
-			path = "iOS-Rehearsal";
+			path = "iOS-Rehersal";
 			sourceTree = "<group>";
 		};
-		911A35112FDF27B000468A7E /* iOS-RehearsalTests */ = {
+		911A35112FDF27B000468A7E /* iOS-RehersalTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = "iOS-RehearsalTests";
+			path = "iOS-RehersalTests";
 			sourceTree = "<group>";
 		};
-		911A351B2FDF27B000468A7E /* iOS-RehearsalUITests */ = {
+		911A351B2FDF27B000468A7E /* iOS-RehersalUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = "iOS-RehearsalUITests";
+			path = "iOS-RehersalUITests";
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -93,9 +80,9 @@
 		911A34F32FDF27AF00468A7E = {
 			isa = PBXGroup;
 			children = (
-				911A34FE2FDF27AF00468A7E /* iOS-Rehearsal */,
-				911A35112FDF27B000468A7E /* iOS-RehearsalTests */,
-				911A351B2FDF27B000468A7E /* iOS-RehearsalUITests */,
+				911A34FE2FDF27AF00468A7E /* iOS-Rehersal */,
+				911A35112FDF27B000468A7E /* iOS-RehersalTests */,
+				911A351B2FDF27B000468A7E /* iOS-RehersalUITests */,
 				911A35532FDF9D6C00468A7E /* Frameworks */,
 				911A34FD2FDF27AF00468A7E /* Products */,
 			);
@@ -104,9 +91,9 @@
 		911A34FD2FDF27AF00468A7E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				911A34FC2FDF27AF00468A7E /* iOS-Rehearsal.app */,
-				911A350E2FDF27B000468A7E /* iOS-RehearsalTests.xctest */,
-				911A35182FDF27B000468A7E /* iOS-RehearsalUITests.xctest */,
+				911A34FC2FDF27AF00468A7E /* iOS-Rehersal.app */,
+				911A350E2FDF27B000468A7E /* iOS-RehersalTests.xctest */,
+				911A35182FDF27B000468A7E /* iOS-RehersalUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -121,9 +108,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		911A34FB2FDF27AF00468A7E /* iOS-Rehearsal */ = {
+		911A34FB2FDF27AF00468A7E /* iOS-Rehersal */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 911A35222FDF27B000468A7E /* Build configuration list for PBXNativeTarget "iOS-Rehearsal" */;
+			buildConfigurationList = 911A35222FDF27B000468A7E /* Build configuration list for PBXNativeTarget "iOS-Rehersal" */;
 			buildPhases = (
 				911A34F82FDF27AF00468A7E /* Sources */,
 				911A34F92FDF27AF00468A7E /* Frameworks */,
@@ -134,19 +121,19 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				911A34FE2FDF27AF00468A7E /* iOS-Rehearsal */,
+				911A34FE2FDF27AF00468A7E /* iOS-Rehersal */,
 			);
-			name = "iOS-Rehearsal";
+			name = "iOS-Rehersal";
 			packageProductDependencies = (
 				911A35542FDF9D6C00468A7E /* Swinject */,
 			);
-			productName = "iOS-Rehearsal";
-			productReference = 911A34FC2FDF27AF00468A7E /* iOS-Rehearsal.app */;
+			productName = "iOS-Rehersal";
+			productReference = 911A34FC2FDF27AF00468A7E /* iOS-Rehersal.app */;
 			productType = "com.apple.product-type.application";
 		};
-		911A350D2FDF27B000468A7E /* iOS-RehearsalTests */ = {
+		911A350D2FDF27B000468A7E /* iOS-RehersalTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 911A35252FDF27B000468A7E /* Build configuration list for PBXNativeTarget "iOS-RehearsalTests" */;
+			buildConfigurationList = 911A35252FDF27B000468A7E /* Build configuration list for PBXNativeTarget "iOS-RehersalTests" */;
 			buildPhases = (
 				911A350A2FDF27B000468A7E /* Sources */,
 				911A350B2FDF27B000468A7E /* Frameworks */,
@@ -158,18 +145,18 @@
 				911A35102FDF27B000468A7E /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
-				911A35112FDF27B000468A7E /* iOS-RehearsalTests */,
+				911A35112FDF27B000468A7E /* iOS-RehersalTests */,
 			);
-			name = "iOS-RehearsalTests";
+			name = "iOS-RehersalTests";
 			packageProductDependencies = (
 			);
-			productName = "iOS-RehearsalTests";
-			productReference = 911A350E2FDF27B000468A7E /* iOS-RehearsalTests.xctest */;
+			productName = "iOS-RehersalTests";
+			productReference = 911A350E2FDF27B000468A7E /* iOS-RehersalTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		911A35172FDF27B000468A7E /* iOS-RehearsalUITests */ = {
+		911A35172FDF27B000468A7E /* iOS-RehersalUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 911A35282FDF27B000468A7E /* Build configuration list for PBXNativeTarget "iOS-RehearsalUITests" */;
+			buildConfigurationList = 911A35282FDF27B000468A7E /* Build configuration list for PBXNativeTarget "iOS-RehersalUITests" */;
 			buildPhases = (
 				911A35142FDF27B000468A7E /* Sources */,
 				911A35152FDF27B000468A7E /* Frameworks */,
@@ -181,13 +168,13 @@
 				911A351A2FDF27B000468A7E /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
-				911A351B2FDF27B000468A7E /* iOS-RehearsalUITests */,
+				911A351B2FDF27B000468A7E /* iOS-RehersalUITests */,
 			);
-			name = "iOS-RehearsalUITests";
+			name = "iOS-RehersalUITests";
 			packageProductDependencies = (
 			);
-			productName = "iOS-RehearsalUITests";
-			productReference = 911A35182FDF27B000468A7E /* iOS-RehearsalUITests.xctest */;
+			productName = "iOS-RehersalUITests";
+			productReference = 911A35182FDF27B000468A7E /* iOS-RehersalUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -213,7 +200,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 911A34F72FDF27AF00468A7E /* Build configuration list for PBXProject "iOS-Rehearsal" */;
+			buildConfigurationList = 911A34F72FDF27AF00468A7E /* Build configuration list for PBXProject "iOS-Rehersal" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -230,9 +217,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				911A34FB2FDF27AF00468A7E /* iOS-Rehearsal */,
-				911A350D2FDF27B000468A7E /* iOS-RehearsalTests */,
-				911A35172FDF27B000468A7E /* iOS-RehearsalUITests */,
+				911A34FB2FDF27AF00468A7E /* iOS-Rehersal */,
+				911A350D2FDF27B000468A7E /* iOS-RehersalTests */,
+				911A35172FDF27B000468A7E /* iOS-RehersalUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -288,12 +275,12 @@
 /* Begin PBXTargetDependency section */
 		911A35102FDF27B000468A7E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 911A34FB2FDF27AF00468A7E /* iOS-Rehearsal */;
+			target = 911A34FB2FDF27AF00468A7E /* iOS-Rehersal */;
 			targetProxy = 911A350F2FDF27B000468A7E /* PBXContainerItemProxy */;
 		};
 		911A351A2FDF27B000468A7E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 911A34FB2FDF27AF00468A7E /* iOS-Rehearsal */;
+			target = 911A34FB2FDF27AF00468A7E /* iOS-Rehersal */;
 			targetProxy = 911A35192FDF27B000468A7E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -430,7 +417,7 @@
 				DEVELOPMENT_TEAM = 5465HQX6TV;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "iOS-Rehearsal/Info.plist";
+				INFOPLIST_FILE = "iOS-Rehersal/Info.plist";
 				INFOPLIST_KEY_NSFaceIDUsageDescription = "Esta aplicación requiere Face ID para desbloquear tus personajes favoritos.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -443,7 +430,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.Ruben.iOS-Rehearsal";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Ruben.iOS-Rehersal";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
@@ -465,7 +452,7 @@
 				DEVELOPMENT_TEAM = 5465HQX6TV;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "iOS-Rehearsal/Info.plist";
+				INFOPLIST_FILE = "iOS-Rehersal/Info.plist";
 				INFOPLIST_KEY_NSFaceIDUsageDescription = "Esta aplicación requiere Face ID para desbloquear tus personajes favoritos.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -478,7 +465,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.Ruben.iOS-Rehearsal";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Ruben.iOS-Rehersal";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
@@ -500,7 +487,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 26.2;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.Ruben.iOS-RehearsalTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Ruben.iOS-RehersalTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = NO;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
@@ -508,7 +495,7 @@
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iOS-Rehearsal.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/iOS-Rehearsal";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iOS-Rehersal.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/iOS-Rehersal";
 			};
 			name = Debug;
 		};
@@ -522,7 +509,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 26.2;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.Ruben.iOS-RehearsalTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Ruben.iOS-RehersalTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = NO;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
@@ -530,7 +517,7 @@
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iOS-Rehearsal.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/iOS-Rehearsal";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iOS-Rehersal.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/iOS-Rehersal";
 			};
 			name = Release;
 		};
@@ -542,7 +529,7 @@
 				DEVELOPMENT_TEAM = 5465HQX6TV;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.Ruben.iOS-RehearsalUITests";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Ruben.iOS-RehersalUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = NO;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
@@ -550,7 +537,7 @@
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "iOS-Rehearsal";
+				TEST_TARGET_NAME = "iOS-Rehersal";
 			};
 			name = Debug;
 		};
@@ -562,7 +549,7 @@
 				DEVELOPMENT_TEAM = 5465HQX6TV;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.Ruben.iOS-RehearsalUITests";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Ruben.iOS-RehersalUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = NO;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
@@ -570,14 +557,14 @@
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "iOS-Rehearsal";
+				TEST_TARGET_NAME = "iOS-Rehersal";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		911A34F72FDF27AF00468A7E /* Build configuration list for PBXProject "iOS-Rehearsal" */ = {
+		911A34F72FDF27AF00468A7E /* Build configuration list for PBXProject "iOS-Rehersal" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				911A35202FDF27B000468A7E /* Debug */,
@@ -586,7 +573,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		911A35222FDF27B000468A7E /* Build configuration list for PBXNativeTarget "iOS-Rehearsal" */ = {
+		911A35222FDF27B000468A7E /* Build configuration list for PBXNativeTarget "iOS-Rehersal" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				911A35232FDF27B000468A7E /* Debug */,
@@ -595,7 +582,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		911A35252FDF27B000468A7E /* Build configuration list for PBXNativeTarget "iOS-RehearsalTests" */ = {
+		911A35252FDF27B000468A7E /* Build configuration list for PBXNativeTarget "iOS-RehersalTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				911A35262FDF27B000468A7E /* Debug */,
@@ -604,7 +591,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		911A35282FDF27B000468A7E /* Build configuration list for PBXNativeTarget "iOS-RehearsalUITests" */ = {
+		911A35282FDF27B000468A7E /* Build configuration list for PBXNativeTarget "iOS-RehersalUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				911A35292FDF27B000468A7E /* Debug */,
